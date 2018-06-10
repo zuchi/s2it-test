@@ -23,7 +23,8 @@ public class main {
 
         if (foundNodeByValue != null) {
             int total = binaryTreeManagement.sumElementsBasedInNode(foundNodeByValue);
-            System.out.println("The of the node and their children is: " + total);
+            System.out.println("The value of the node and their children is: " + total);
+            System.out.println("The value of the root's children node is: " + (total - foundNodeByValue.getValor()));
         } else
             System.out.println("Binary Tree node not found");
     }
